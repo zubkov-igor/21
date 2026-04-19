@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра в 21</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Игра в 21 (очко)</h1>
+
+        <div class="game-area">
+            <!-- Карты дилера -->
+            <div class="dealer">
+                <h2>Дилер</h2>
+                <div id="dealer-cards" class="cards"></div>
+                <div id="dealer-score" class="score">Счёт: ?</div>
+            </div>
+
+            <!-- Карты игрока -->
+            <div class="player">
+                <h2>Игрок</h2>
+                <div id="player-cards" class="cards"></div>
+                <div id="player-score" class="score">Счёт: 0</div>
+            </div>
+        </div>
+
+        <!-- Кнопки управления -->
+        <div class="controls">
+            <button id="hit-btn">Взять карту</button>
+            <button id="stand-btn">Хватит</button>
+            <button id="new-game-btn">Новая игра</button>
+        </div>
+
+        <!-- Сообщение о результате -->
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

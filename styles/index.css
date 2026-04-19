@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.dealer, .player {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cards {
+    min-height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card.red {
+    color: red;
+}
+
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#hit-btn {
+    background: #27ae60;
+    color: white;
+}
+
+#stand-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+#new-game-btn {
+    background: #3498db;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    font-size: 1.5em;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+.win {
+    color: #27ae60;
+}
+
+.lose {
+    color: #e74c3c;
+}
+
+.draw {
+    color: #f39c12;
+}
+
+.card.hidden {
+    background: linear-gradient(45deg, #667eea, #764ba1);
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
